@@ -29,8 +29,9 @@
   </head>
   <body>
     <header class="header">
-      <nav class="navbar">
-        <ul class="nav">
+      <nav>
+        <input id="nav-toggle" type="checkbox" />
+        <ul class="links">
           <li><a class="item" href="#about">About</a></li>
           <li><a class="item" href="#skills">Skills</a></li>
           <li><a class="item" href="#projects">Projects</a></li>
@@ -44,7 +45,13 @@
             >
           </li>
         </ul>
+        <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
       </nav>
+
       <div class="name">
         <p class="title1">Jayram Pansare</p>
         <p class="title2">Front-End Developer</p>
