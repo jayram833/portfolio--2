@@ -2,56 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Jayram Pansare</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Document</title>
   </head>
   <body>
     <header class="header">
-      <nav>
-        <input id="nav-toggle" type="checkbox" />
-        <ul class="links">
-          <li><a class="item" href="#about">About</a></li>
-          <li><a class="item" href="#skills">Skills</a></li>
-          <li><a class="item" href="#projects">Projects</a></li>
-          <li><a class="item" href="#contact">Contact</a></li>
-          <li>
-            <a
-              class="item"
-              href="./resume/Jayram_Pansare .pdf"
-              download="jayram_pansare"
-              >Resume<i class="fas">&#xf019;</i></a
-            >
-          </li>
-        </ul>
-        <label for="nav-toggle" class="icon-burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </label>
+      <nav class="navbar">
+        <div class="brand-title">JP</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a href="./resume/Jayram_Pansare .pdf" download="jayram_pansare"
+                >Resume<i class="fas">&#xf019;</i></a
+              >
+            </li>
+          </ul>
+        </div>
       </nav>
-
       <div class="name">
         <p class="title1">Jayram Pansare</p>
         <p class="title2">Front-End Developer</p>
@@ -59,24 +53,34 @@
     </header>
 
     <main>
-      <div class="container" id="about">
-        <section class="container2">
-          <img src="./images/IMG_5105_2.JPG" alt="user image" class="photo" />
-          <h2 class="headingprimary">About me</h2>
-          <div class="social-icons">
-            <a href="#" class="fa fa-linkedin ficon"></a>
-            <a href="#" class="fa fa-github ficon"></a>
-            <a href="#" class="fa fa-twitter ficon"></a>
-            <a href="#" class="fa fa-envelope ficon"></a>
-          </div>
-          <p class="info">
-            Hi I am Jayram Pansare, a 24 years old web developer based out of
-            Aurangabad, India. I have completed my Bachelor's of engineering in
-            Information Technology from Sanjivani COE, Kopargaon.
-          </p>
-        </section>
-      </div>
-      <section class="skills" id="skills">
+      <section class="container-about" id="about">
+        <img src="./images/IMG_5105_2.JPG" alt="user image" class="img1" />
+        <h2 class="headingprimary">About me</h2>
+        <div class="social-icons special-icons">
+          <a
+            href="https://www.linkedin.com/in/jayram-pansare-311089148/"
+            class="fa fa-linkedin ficon"
+            target="_blank"
+          ></a>
+          <a
+            href="https://github.com/jayram833"
+            class="fa fa-github ficon"
+            target="_blank"
+          ></a>
+          <a href="#" class="fa fa-twitter ficon" target="_blank"></a>
+          <a
+            href="mailto:jaypansare96@gmail.com"
+            class="fa fa-envelope ficon"
+            target="mailto:jaypansare96@gmail.com"
+          ></a>
+        </div>
+        <p class="info">
+          Hi I am Jayram Pansare, a 24 years old web developer based out of
+          Aurangabad, India. I have completed my Bachelor's of engineering in
+          Information Technology from Sanjivani COE, Kopargaon.
+        </p>
+      </section>
+      <section class="container-skills" id="skill">
         <h2 class="headingSection">Skills</h2>
         <div class="gridContainer">
           <p class="items item1">Html</p>
@@ -90,10 +94,9 @@
           <p class="items item9">Chrome Developer Tools</p>
         </div>
       </section>
-
-      <section class="projects" id="projects">
+      <section class="projects" id="project">
         <h2 class="headingSection">Projects</h2>
-        <div class="projectContainer">
+        <div class="container-project">
           <div class="project1 pr">
             <img src="./images/project1.png" alt="" class="image1" />
             <p class="detail">
@@ -170,12 +173,25 @@
         let's discuss over coffee
       </p>
       <div class="social-icons">
-        <a href="#" class="fa fa-linkedin ficon"></a>
-        <a href="#" class="fa fa-github ficon"></a>
-        <a href="#" class="fa fa-twitter ficon"></a>
-        <a href="#" class="fa fa-envelope ficon"></a>
+        <a
+          href="https://www.linkedin.com/in/jayram-pansare-311089148/"
+          class="fa fa-linkedin ficon"
+          target="_blank"
+        ></a>
+        <a
+          href="https://github.com/jayram833"
+          class="fa fa-github ficon"
+          target="_blank"
+        ></a>
+        <a href="#" class="fa fa-twitter ficon" target="_blank"></a>
+        <a
+          href="mailto:jaypansare96@gmail.com"
+          class="fa fa-envelope ficon"
+          target="mailto:jaypansare96@gmail.com"
+        ></a>
       </div>
-      <img src="./images/foot.jpg" alt="footer image" />
+      <img class="footerimg" src="./images/foot.jpg" alt="footer image" />
     </footer>
+    <script src="./app.js"></script>
   </body>
 </html>

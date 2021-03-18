@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  overflow-x: hidden;
 }
 
 html {
@@ -43,11 +44,8 @@ nav {
 }
 
 nav .links {
-  float: right;
-  padding: 0;
-  margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 nav .links li {
@@ -230,14 +228,14 @@ nav .icon-burger .line {
   display: grid;
 
   grid-gap: 5rem;
-  grid-template-rows: 40% 40%;
+  grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(3, 1fr);
 }
 
 .pr {
   border: 2px solid var(--color-primary);
   border-radius: 5px;
-  padding: 1.5rem 1.5rem 12rem 1.5rem;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
 }
 
 .image1 {
@@ -303,7 +301,7 @@ nav .icon-burger .line {
     width: 90%;
   }
   .projects {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -362,28 +360,14 @@ nav .icon-burger .line {
 @media only screen and (max-width: 37.5em) {
   /* About section Container */
   .container2 {
-    grid-gap: 1rem;
-    grid-template-rows: 0.5fr 3fr 0.5fr 0.5fr;
-    grid-template-columns: none;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .photo {
-    padding: 2rem;
-    width: fit-content;
-    grid-row: 2 / 3;
-  }
-  .headingprimary {
-    grid-row: 1 / 2;
-  }
-
-  .social-icons {
-    grid-row: 3 / 4;
-    text-align: center;
-    align-self: center;
-  }
-  .info {
-    grid-row: 4 / 5;
+    width: 100%;
   }
 
   /* Skills container */
