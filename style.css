@@ -245,6 +245,11 @@ body {
   margin: 0.5rem;
 }
 
+.prjBtn {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
 .btn:hover {
   background: linear-gradient(to right, #005c97, #363795);
 }
