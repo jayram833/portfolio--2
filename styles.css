@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fff;
+  transition: background-color 6s ease; /* Slow background transition to match sun */
+}
+#navbar {
+  /* z-index: 1; */
+  height: 80px;
+  background: linear-gradient(90deg, #d9e021 0, #8cc63f 100%) 0 0 no-repeat
+    padding-box;
+}
+.dark-light-switch {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: inherit;
+
+  padding-left: 20px;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 53px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}
+
+.container {
+  position: relative;
+  top: -80px;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.sun {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: orange;
+  box-shadow: 0 0 35px 5px yellow, 0 0 25px 10px yellow inset;
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Sun animation for dark mode */
+.sunset {
+  animation: sunset 5s forwards; /* Sun setting matches background transition */
+}
+
+@keyframes sunset {
+  0% {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  100% {
+    top: 50%;
+    left: 110%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Sun rise animation for light mode */
+.sunrise {
+  animation: sunrise 4s forwards; /* Sun rising matches background transition */
+}
+
+@keyframes sunrise {
+  0% {
+    top: 100%;
+    left: -100%;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Dark mode styling */
+body.dark-mode {
+  background-color: #1c1c1e;
+  transition: background-color 6s ease; /* Background transition matches sun */
+}
+
+body.dark-mode .sun {
+  background-color: #f39c12;
+  box-shadow: 0 0 20px #f39c12;
+}
+
+.profile-img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.user-info {
+  position: relative;
+  top: -40px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}

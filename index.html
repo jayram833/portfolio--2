@@ -2,229 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
-    <link rel="stylesheet" href="./style.css" />
-
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Jayram Pansare</title>
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar">
-        <div class="brand-title">JP</div>
-        <a href="#" class="toggle-button">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-        <div class="navbar-links">
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skill">Skills</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-              <a href="./resume/Jayram_Pansare.pdf" download="jayram_pansare"
-                >Resume<i class="fas">&#xf019;</i></a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div class="name">
-        <p class="title1">Jayram Pansare</p>
-        <p class="title2">Front-End Developer</p>
+    <nav id="navbar">
+      <div class="dark-light-switch">
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox" class="checkbox-label">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 494 512">
+            <path
+              fill="#FFD43B"
+              d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
+            />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 594 512">
+            <path
+              fill="#ffd740"
+              d="M375.7 19.7c-1.5-8-6.9-14.7-14.4-17.8s-16.1-2.2-22.8 2.4L256 61.1 173.5 4.2c-6.7-4.6-15.3-5.5-22.8-2.4s-12.9 9.8-14.4 17.8l-18.1 98.5L19.7 136.3c-8 1.5-14.7 6.9-17.8 14.4s-2.2 16.1 2.4 22.8L61.1 256 4.2 338.5c-4.6 6.7-5.5 15.3-2.4 22.8s9.8 13 17.8 14.4l98.5 18.1 18.1 98.5c1.5 8 6.9 14.7 14.4 17.8s16.1 2.2 22.8-2.4L256 450.9l82.5 56.9c6.7 4.6 15.3 5.5 22.8 2.4s12.9-9.8 14.4-17.8l18.1-98.5 98.5-18.1c8-1.5 14.7-6.9 17.8-14.4s2.2-16.1-2.4-22.8L450.9 256l56.9-82.5c4.6-6.7 5.5-15.3 2.4-22.8s-9.8-12.9-17.8-14.4l-98.5-18.1L375.7 19.7zM269.6 110l65.6-45.2 14.4 78.3c1.8 9.8 9.5 17.5 19.3 19.3l78.3 14.4L402 242.4c-5.7 8.2-5.7 19 0 27.2l45.2 65.6-78.3 14.4c-9.8 1.8-17.5 9.5-19.3 19.3l-14.4 78.3L269.6 402c-8.2-5.7-19-5.7-27.2 0l-65.6 45.2-14.4-78.3c-1.8-9.8-9.5-17.5-19.3-19.3L64.8 335.2 110 269.6c5.7-8.2 5.7-19 0-27.2L64.8 176.8l78.3-14.4c9.8-1.8 17.5-9.5 19.3-19.3l14.4-78.3L242.4 110c8.2 5.7 19 5.7 27.2 0zM256 368a112 112 0 1 0 0-224 112 112 0 1 0 0 224zM192 256a64 64 0 1 1 128 0 64 64 0 1 1 -128 0z"
+            />
+          </svg>
+          <span class="ball"></span>
+        </label>
       </div>
-    </header>
+    </nav>
+    <div class="container">
+      <div class="sun" id="sun"></div>
+      <div class="user-info">
+        <img src="./images/IMG_5105_2.JPG" class="profile-img" />
+        <div class="info">
+          <h1>Hi I'm Jayram,</h1>
+          <h2>Front-end Developer</h2>
+        </div>
+      </div>
+    </div>
 
-    <main>
-      <section class="container-about" id="about">
-        <img src="./images/IMG_5105_2.JPG" alt="user image" class="img1" />
-        <h2 class="headingprimary">About me</h2>
-        <div class="social-icons special-icons">
-          <a
-            href="https://www.linkedin.com/in/jayram-pansare-311089148/"
-            class="fa fa-linkedin ficon"
-            target="_blank"
-          ></a>
-          <a
-            href="https://github.com/jayram833"
-            class="fa fa-github ficon"
-            target="_blank"
-          ></a>
-          <a href="#" class="fa fa-twitter ficon" target="_blank"></a>
-          <a
-            href="mailto:jaypansare96@gmail.com"
-            class="fa fa-envelope ficon"
-            target="mailto:jaypansare96@gmail.com"
-          ></a>
-        </div>
-        <p class="info">
-          Hi I am Jayram Pansare, a 24 years old web developer based out of
-          Aurangabad, India. I have completed my Bachelor's of engineering in
-          Information Technology from Sanjivani COE, Kopargaon.
-        </p>
-      </section>
-      <section class="container-skills" id="skill">
-        <h2 class="headingSection">Skills</h2>
-        <div class="gridContainer">
-          <p class="items item1">Html</p>
-          <p class="items item2">Css</p>
-          <p class="items item3">JavaScript</p>
-          <p class="items item4">ReactJs</p>
-          <p class="items item5">Sass(Scss)</p>
-          <p class="items item6">Bootstrap</p>
-          <p class="items item7">Version Control(Git)</p>
-          <p class="items item8">CLI</p>
-          <p class="items item9">Chrome Developer Tools</p>
-        </div>
-      </section>
-      <section class="projects" id="project">
-        <h2 class="headingSection">Projects</h2>
-        <div class="container-project">
-          <div class="project1 pr">
-            <img src="./images/pr_covid.png" alt="" class="image1" />
-            <p class="detail">
-              Get the latest stats about covid‑19 active cases, deaths and
-              recovered cases around the world. Uses the onlin COVID-19 API to
-              get latest data.
-            </p>
-            <button class="visit btn">
-              <a class="prjBtn" href="https://co-19.netlify.app/"
-                >Visit Project</a
-              >
-            </button>
-            <button class="git btn">
-              <a class="prjBtn" href="https://github.com/jayram833/covid"
-                >GitHub</a
-              >
-            </button>
-          </div>
-          <div class="project2 pr">
-            <img src="./images/pr_spaceEx.png" alt="" class="image1" />
-            <p class="detail">
-              Space application that displays terrain layers collected by NASA
-              along with daily latest blog post about space activites. The api
-              used is NASA's online API to fetch data.
-            </p>
-            <button class="visit btn">
-              <a class="prjBtn" href="https://nsa-api.netlify.app/"
-                >Visit Project</a
-              >
-            </button>
-            <button class="git btn">
-              <a
-                class="prjBtn"
-                href="https://github.com/jayram833/space-explorer"
-                >GitHub</a
-              >
-            </button>
-          </div>
-          <div class="project3 pr">
-            <img src="./images/project1.png" alt="" class="image1" />
-            <p class="detail">
-              Responsive portfolio website using HTML, Css(SCSS) and JavaScript.
-            </p>
-            <button class="visit btn">
-              <a class="prjBtn" href="https://jaypansare.netlify.app/"
-                >Visit Project</a
-              >
-            </button>
-            <button class="git btn">
-              <a class="prjBtn" href="https://github.com/jayram833/portfolio--2"
-                >GitHub</a
-              >
-            </button>
-          </div>
-          <div class="project4 pr">
-            <img src="./images/pr_fork.png" alt="" class="image1" />
-            <p class="detail">
-              Recipe application with custom recipe uploads, search for recipe
-              from online API
-            </p>
-            <button class="visit btn">
-              <a class="prjBtn" href="https://forkify-jay.netlify.app/"
-                >Visit Project</a
-              >
-            </button>
-            <button class="git btn">
-              <a class="prjBtn" href="https://github.com/jayram833/forkify"
-                >GitHub</a
-              >
-            </button>
-          </div>
-          <div class="project5 pr">
-            <img src="./images/pr_bank.png" alt="" class="image1" />
-            <p class="detail">
-              Simple JavaScript based banking application to display user
-              account information
-            </p>
-            <button class="visit btn">
-              <a class="prjBtn" href="https://banking-jay.netlify.app/"
-                >Visit Project</a
-              >
-            </button>
-            <button class="git btn">
-              <a class="prjBtn" href="https://github.com/jayram833/BanKING"
-                >GitHub</a
-              >
-            </button>
-          </div>
-          <!-- <div class="project6 pr">
-            <img src="./images/project1.png" alt="" class="image1" />
-            <p class="detail">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
-              modi! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Magni, modi! Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Magni, modi!
-            </p>
-            <button class="visit btn">Visit Project</button>
-            <button class="git btn">GitHub</button>
-          </div> -->
-        </div>
-      </section>
-    </main>
-    <footer class="footer" id="contact">
-      <h2 class="headingSection">Coffe with me</h2>
-      <p class="detail">
-        I am always excited to work on some awesome projects, message me and
-        let's discuss over coffee
-      </p>
-      <div class="social-icons">
-        <a
-          href="https://www.linkedin.com/in/jayram-pansare-311089148/"
-          class="fa fa-linkedin ficon"
-          target="_blank"
-        ></a>
-        <a
-          href="https://github.com/jayram833"
-          class="fa fa-github ficon"
-          target="_blank"
-        ></a>
-        <a href="#" class="fa fa-twitter ficon" target="_blank"></a>
-        <a
-          href="mailto:jaypansare96@gmail.com"
-          class="fa fa-envelope ficon"
-          target="mailto:jaypansare96@gmail.com"
-        ></a>
-      </div>
-      <img class="footerimg" src="./images/foot.jpg" alt="footer image" />
-    </footer>
     <script src="./app.js"></script>
   </body>
 </html>
