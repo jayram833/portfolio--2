@@ -1,17 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
+  font-family: "Poppins", sans-serif;
   background-color: #fff;
-  transition: background-color 6s ease; /* Slow background transition to match sun */
+  transition: background-color 0.5s ease;
 }
 #navbar {
-  /* z-index: 1; */
   height: 80px;
-  background: linear-gradient(90deg, #d9e021 0, #8cc63f 100%) 0 0 no-repeat
-    padding-box;
+  background: linear-gradient(135deg, #373b44, #4286f4);
 }
 .dark-light-switch {
   display: flex;
@@ -54,17 +55,6 @@ body {
   transform: translateX(24px);
 }
 
-.container {
-  position: relative;
-  top: -80px;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: -1;
-}
-
 .sun {
   position: absolute;
   left: 50%;
@@ -77,46 +67,10 @@ body {
   transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
 
-/* Sun animation for dark mode */
-.sunset {
-  animation: sunset 5s forwards; /* Sun setting matches background transition */
-}
-
-@keyframes sunset {
-  0% {
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  100% {
-    top: 50%;
-    left: 110%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-/* Sun rise animation for light mode */
-.sunrise {
-  animation: sunrise 4s forwards; /* Sun rising matches background transition */
-}
-
-@keyframes sunrise {
-  0% {
-    top: 100%;
-    left: -100%;
-    transform: translate(-50%, -50%);
-  }
-  100% {
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
 /* Dark mode styling */
 body.dark-mode {
   background-color: #1c1c1e;
-  transition: background-color 6s ease; /* Background transition matches sun */
+  transition: background-color 0.5s ease;
 }
 
 body.dark-mode .sun {
@@ -130,9 +84,13 @@ body.dark-mode .sun {
 }
 
 .user-info {
-  position: relative;
-  top: -40px;
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+}
+
+.company-logo {
+  width: 100px;
+}
+#experience {
+  background: linear-gradient(135deg, #373b44, #4286f4);
 }
